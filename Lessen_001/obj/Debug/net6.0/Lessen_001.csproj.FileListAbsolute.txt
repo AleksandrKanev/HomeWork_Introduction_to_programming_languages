@@ -1,0 +1,15 @@
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\bin\Debug\net6.0\Lessen_001.exe
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\bin\Debug\net6.0\Lessen_001.deps.json
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\bin\Debug\net6.0\Lessen_001.runtimeconfig.json
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\bin\Debug\net6.0\Lessen_001.dll
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\bin\Debug\net6.0\Lessen_001.pdb
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\obj\Debug\net6.0\Lessen_001.csproj.AssemblyReference.cache
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\obj\Debug\net6.0\Lessen_001.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\obj\Debug\net6.0\Lessen_001.AssemblyInfoInputs.cache
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\obj\Debug\net6.0\Lessen_001.AssemblyInfo.cs
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\obj\Debug\net6.0\Lessen_001.csproj.CoreCompileInputs.cache
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\obj\Debug\net6.0\Lessen_001.dll
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\obj\Debug\net6.0\refint\Lessen_001.dll
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\obj\Debug\net6.0\Lessen_001.pdb
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\obj\Debug\net6.0\Lessen_001.genruntimeconfig.cache
+C:\Users\Kanev\Desktop\Знакомство с языками программирования (семинары)\Lessen_001\obj\Debug\net6.0\ref\Lessen_001.dll
