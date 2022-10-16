@@ -34,7 +34,7 @@ Console.WriteLine($"The maximum number is {max}");
 */
 
 // Задача №3 Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
-
+/*
 Console.Write("Input number: ");
 int n1 = Convert.ToInt32(Console.ReadLine());
 
@@ -44,3 +44,22 @@ if(remnant == 0)
     Console.WriteLine($"The number {n1} is an even number");
 else
     Console.WriteLine($"The number {n1} is not an event number");
+*/
+
+// Задача №4 Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+Console.Write("Input number: ");
+int n = Convert.ToInt32(Console.ReadLine());
+
+int num1 = 1;
+
+while(num1 < n)
+{
+    int result = num1 % 2;
+    if(result == 0)
+    {
+        Console.WriteLine(num1);
+    }
+    num1++;
+}
+ 
