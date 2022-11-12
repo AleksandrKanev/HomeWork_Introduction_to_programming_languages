@@ -58,13 +58,78 @@
 
 // Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
 
-int[] CreateRandomArray( int size, int minValue, int maxValue)
+// int[] CreateRandomArray( int size, int minValue, int maxValue)
+// {
+//     int[] array = new int[size]; // шаблон запомнить
+
+//     for (int i = 0; i < size; i++)
+//     {
+//         array[i] = new Random().Next(minValue, maxValue + 1);
+//     }
+
+//     return array;
+// }
+
+// void ShowArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + ", ");
+//     }
+
+//     Console.WriteLine();
+// }
+
+// Console.WriteLine("Input number of elements: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input a min possible value: ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input a max possible value: ");
+// int max = Convert.ToInt32(Console.ReadLine());
+// int[] myArray = CreateRandomArray(8,0,1);
+// ShowArray(myArray);
+
+// Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
+
+// int[] CreateRandomArray( int size)
+// {
+//     int[] array = new int[size]; // шаблон запомнить
+
+//     for (int i = 0; i < size; i++)
+//     {
+//         array[i] = new Random().Next(-100, 101);
+//     }
+
+//     return array;
+// }
+
+// void ShowArray(int[] array)
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + ", ");
+//     }
+
+//     Console.WriteLine();
+// }
+
+// Console.Write("Input number of elements: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// int[] myArray = CreateRandomArray(n);
+// ShowArray(myArray);
+
+
+// Здесь написать программу, которая запрашивает размер и каждый элемент по одельности у пользователя. 
+
+int[] CreateRandomArray( int size)
 {
     int[] array = new int[size]; // шаблон запомнить
 
     for (int i = 0; i < size; i++)
     {
-        array[i] = new Random().Next(minValue, maxValue + 1);
+        Console.Write("Input number: ");
+        int a = Convert.ToInt32(Console.ReadLine());
+        array[i] = a;
     }
 
     return array;
@@ -80,14 +145,7 @@ void ShowArray(int[] array)
     Console.WriteLine();
 }
 
-Console.WriteLine("Input number of elements: ");
+Console.Write("Input number of elements: ");
 int n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input a min possible value: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input a max possible value: ");
-int max = Convert.ToInt32(Console.ReadLine());
-int[] myArray = CreateRandomArray(8,0,1);
+int[] myArray = CreateRandomArray(n);
 ShowArray(myArray);
-
-// Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
-// Здесь написать программу, которая запрашивает размер и каждый элемент по одельности у пользователя. 
