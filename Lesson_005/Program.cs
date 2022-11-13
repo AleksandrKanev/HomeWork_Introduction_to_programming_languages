@@ -10,15 +10,15 @@
 //     return array;
 // }
 
-// void ShowArray(int[] array)
-// {
-//     for (int i = 0; i < array.Length; i++)
-//     {
-//         Console.Write(array[i] + ", ");
-//     }
+void ShowArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + ", ");
+    }
 
-//     Console.WriteLine();
-// }
+    Console.WriteLine();
+}
 
 // int GetNegativSum(int[] array)
 // {
@@ -30,15 +30,15 @@
 // }
 
 
-// Console.WriteLine("Input number of elements: ");
-// int size = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input number of elements: ");
+int size = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine("Input a min possible value: ");
 // int min = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine("Input a max possible value: ");
 // int max = Convert.ToInt32(Console.ReadLine());
 
-// int[] myArray = CreateRandomArray(size);
-// ShowArray(myArray);
+int[] myArray = CreateRandomArray(size);
+ShowArray(myArray);
 
 // int negativeSum = GetNegativSum(myArray);
 
@@ -46,17 +46,17 @@
 
 // Задайте массив. Напишите программу, которая определяет, присутствует ли заданное число в массиве.
 
-// int[] CreateRandomArray(int size)
-// {
-//     int[] array = new int[size]; // шаблон запомнить
+int[] CreateRandomArray(int size)
+{
+    int[] array = new int[size]; // шаблон запомнить
 
-//     for (int i = 0; i < size; i++)
-//     {
-//         array[i] = new Random().Next(1,100);
-//     }
+    for (int i = 0; i < size; i++)
+    {
+        array[i] = new Random().Next(-1000,1001);
+    }
 
-//     return array;
-// }
+    return array;
+}
 
 // bool IsFindnumber(int [] array, int number)
 // {
@@ -76,11 +76,43 @@
 
 // Задайте одномерный массив из m случайных чисел. Найдите количество элементов массива, значения которых лежат в отрезке [a,b].
 
-// Console.WriteLine("Input max numbers: ");
-// int num1 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Input min numbers: ");
-// int num2 = Convert.ToInt32(Console.ReadLine());
+int EleSum(int[] array, int min, int max)
+{
+    int sum = 0;
+    for (int i = 0; i < array.Length; i++)
+        if(array[i] > min & array[i] < max)
+            sum += 1;
+    return sum;
+}
+Console.WriteLine("Input max numbers: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input min numbers: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+int n = EleSum(myArray, num2, num1);
+
+Console.WriteLine($"There are elements {n} on the segment [{num2}, {num1}]");
+
+
 
 
 // Напишите программу замена элементов массива: положительные элементы замените на соответствующие отрицательные, и наоборот.
 
+// int[] RepArray(int[] array)
+// {
+    
+
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] *= -1;
+//     }
+//     return array;
+// }
+
+
+// int[] myArray = CreateRandomArray(size);
+// ShowArray(myArray);
+
+// RepArray(myArray);
+
+// ShowArray(myArray);
