@@ -226,68 +226,51 @@ int[] Array(int m, int n)
 }
 int[] array3 = Array(m, n);
 
-// void Arr(int[] array);
-// {
-//     for (int j = 0; j < array.Length; j++)
-//     {
-//         Console.Write(array[j] + ",  ");
-//     }
-//     Console.WriteLine();
-
-// }
-
 int[,] SpiralArray(int[] array, int m, int n)
 {
     int[,] array2d = new int[m, n];
-    int arrLen = 0;
-    int x = m;
-    int y = n;
-    int i = 0;
-    int j = 0;
-    while (arrLen < array.Length)
+    int index = 1;
+    int a = 0;
+    int b = 0;
+    int x = 0;
+    int y = 0;
+    array2d[0, 0] = array[0];
+    while (index < array.Length)
     {
-        
-        // while (j < x)
-        // {
-        //     array2d[i, j] = array[arrLen];
-        //     j++;
-        //     arrLen++;
-        // }
-        // j--;
-        // i++;
-        // x--;
-        // while (i < y)
-        // {
-        //     array2d[i, j] = array[arrLen];
-        //     i++;
-        //     arrLen++;
-        // }
-        // i--;
-        // j--;
-        // y--;
-        // while (j > x-j)
-        // {
-        //     array2d[i, j] = array[arrLen];
-        //     j--;
-        //     arrLen++;
-        // }
-        // i--;
-        // arrLen--;
-        // while (i > y-i)
-        // {
-        //     array2d[i, j] = array[arrLen];
-        //     i--;
-        //     arrLen++;
-        // }
-        // j++;
-        // arrLen--;
-       
+        for (int j = b + 1; j < array2d.GetLength(0) - x; j++, index++)
+        {
+            array2d[a, j] = array[index];
+            Console.WriteLine(array2d[a, j]);
+            b = j;
+        }
+
+        for (int i = a + 1; i < array2d.GetLength(1) - y; i++, index++)
+        {
+            array2d[i, b] = array[index];
+            Console.WriteLine(array2d[i, b]);
+            a = i;
+        }
+        for (int j = b - 1; j >= x; j--, index++)
+        {
+            array2d[a, j] = array[index];
+            Console.WriteLine(array2d[a, j]);
+            b = j;
+        }
+        y++;
+        for (int i = a - 1; i >= y; i--, index++)
+        {
+            array2d[i, b] = array[index];
+            Console.WriteLine(array2d[i, b]);
+            a = i;
+        }
+        x++;
+
     }
     return array2d;
 }
 
 int[,] myArray = SpiralArray(array3, m, n);
 
-// Arr(array3);
+
 Show2dArray(myArray);
-// SpiralArray(myArray);
+
